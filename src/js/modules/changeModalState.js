@@ -68,9 +68,9 @@ const changeModalState = (state) => {
   bindActionToElems(windowWidth, 'input', 'width');
   // Высота окон
   bindActionToElems(windowHeight, 'input', 'height');
-  // Тип
+  // Тип. Если элемент <select></select> - его событие change
   bindActionToElems(windowType, 'change', 'type');
-  // Холодное или теплое
+  // Холодное или теплое. Если элемент checkbox - его событие change
   bindActionToElems(windowProfile, 'change', 'profile');
 };
 
